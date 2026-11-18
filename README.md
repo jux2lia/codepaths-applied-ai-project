@@ -10,15 +10,14 @@ Rocket Man (Elton John) → 85% (Loote) → Never Be Alone (TheFatRat) → Storm
 
 ## Original project (Module 3)
 
-> **TODO before submitting:** replace this line with the link to your Module 3 repository.
+https://github.com/jux2lia/codepaths-applied-ai-project
 
-My Module 3 project was a rule-based music recommender over a **10-song catalog**. It scored each song against one fixed user profile: **genre match (+2) + mood match (+1) + energy similarity (up to +1)**, and returned the **top 5 songs with reasons**.
+Module 3 project was a rule-based music recommender over a **10-song catalog**. It scored each song against one fixed user profile: **genre match (+2) + mood match (+1) + energy similarity (up to +1)**, and returned the **top 5 songs with reasons**.
 
 What it couldn't do:
 - It only ranked songs for a fixed, hand-written profile.
 - It couldn't take a real playlist as input.
-- It couldn't *move* a listener toward something new.
-- My own model card found that its weights favoured genre over mood.
+- My own model found that its weights favored genre over mood.
 
 ## Goals and what's new
 
