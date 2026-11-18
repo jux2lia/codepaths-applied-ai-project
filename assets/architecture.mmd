@@ -1,0 +1,48 @@
+flowchart TD
+    subgraph Input
+        PL["Exportify playlist CSV<br/>(data/my_playlist.csv or examples/)"]
+        DEST["Destination genre / subgenre"]
+    end
+
+    subgraph Data["src/data.py"]
+        CAT["Catalog: data/raw/spotify_songs.csv<br/>dedupe · scale tempo/loudness · derive mood"]
+        MATCH["match_playlist<br/>by track ID, then title + artist"]
+    end
+
+    subgraph Guard["src/guardrails.py · run_with_guardrails"]
+        G1["clamp settings · empty / 0% match stops<br/>low match / one song / already-there warnings<br/>unknown genre → close matches (planner)"]
+    end
+
+    subgraph Agent["src/agent.py · Plan → Act → Check → Revise"]
+        PROF["Taste profile (src/profile.py)<br/>start = most typical playlist song"]
+        COMP["Genre compass (src/compass.py)<br/>logistic regression = progress meter"]
+        PLAN["Plan (src/planner.py)<br/>straight-line waypoints to the heart of the genre<br/>last waypoint must be a destination song"]
+        ACT["Act: retrieve candidates<br/>① 50 nearest songs (audio features)<br/>② lineage links (src/lineage.py + data/lineage.json)<br/>→ rank with scorer (src/scorer.py)"]
+        CHECK["Check (src/checks.py)<br/>step size · rising compass · arrival · no repeat artist"]
+        REV["Revise<br/>bridge waypoint · ban artist · compass floor · require arrival"]
+    end
+
+    subgraph Output
+        CLI["CLI: src/main.py"]
+        APP["Streamlit: app.py<br/>bubble chart (src/viz.py) · cards (src/explain.py)"]
+        TRACE["logs/traces/*.json + logs/bubble_breaker.log"]
+        EVAL["src/eval_harness.py<br/>15 scenarios, PASS/FAIL"]
+    end
+
+    PL --> MATCH
+    CAT --> MATCH
+    MATCH --> G1
+    DEST --> G1
+    G1 --> PROF
+    CAT --> COMP
+    PROF --> PLAN
+    COMP --> PLAN
+    PLAN --> ACT
+    ACT --> CHECK
+    CHECK -- "a check failed (max 5 revisions)" --> REV
+    REV --> ACT
+    CHECK -- "all checks pass / cap reached" --> CLI
+    CHECK --> APP
+    CLI --> TRACE
+    APP --> TRACE
+    EVAL -. "runs the same guarded agent" .-> G1

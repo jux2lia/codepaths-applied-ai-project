@@ -90,7 +90,7 @@ def test_destination_already_in_taste_warns(catalog):
 
 def test_clamped_settings_are_used(catalog):
     run = run_with_guardrails(catalog, as_playlist(catalog.iloc[:20]), "hard rock", n_steps=0, max_step=9)
-    assert run.settings == {"n_steps": 1, "max_step": MAX_MAX_STEP}
+    assert run.settings == {"n_steps": 1, "max_step": MAX_MAX_STEP, "lineage": True}
     assert len(run.result.trace["rounds"][0]["path"]) == 2  # start + 1 step
 
 

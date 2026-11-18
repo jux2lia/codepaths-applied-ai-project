@@ -92,7 +92,8 @@ def test_lineage_link_changes_the_route(catalog, playlist):
 
 def test_without_edges_lineage_columns_are_empty(catalog, playlist):
     result = agent.run(catalog, playlist, "hard rock")
-    assert result.path["lineage"].isna().all()
+    assert all(v is None for v in result.path["lineage"])  # None, not a (truthy) NaN
+    assert all("lineage" not in step for step in result.trace["rounds"][0]["path"])
     assert result.trace["settings"]["lineage"]["enabled"] is False
 
 

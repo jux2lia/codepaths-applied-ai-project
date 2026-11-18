@@ -1,0 +1,143 @@
+{
+  "run": {
+    "started": "2026-11-18T03:01:08",
+    "playlist_file": "sampled_classics.csv",
+    "args": {
+      "to": "rap",
+      "steps": 4,
+      "max_step": 0.12,
+      "lineage": false
+    },
+    "settings_used": {
+      "n_steps": 4,
+      "max_step": 0.12,
+      "lineage": false
+    }
+  },
+  "playlist": {
+    "songs": 14,
+    "matched": 14,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "rap",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 4,
+    "max_step": 0.12,
+    "max_revisions": 5,
+    "arrival_progress": 0.5,
+    "lineage": {
+      "enabled": false,
+      "edges_in_catalog": 0
+    }
+  },
+  "profile": {
+    "n_songs": 14,
+    "top_genres": {
+      "rock": 8,
+      "r&b": 5,
+      "latin": 1
+    },
+    "moods": {
+      "happy": 8,
+      "sad": 3,
+      "angry": 2,
+      "calm": 1
+    },
+    "start_song": "Under Pressure - Remastered — Queen",
+    "start_progress": 0.259
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.397,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.554,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.7,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.814,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Under Pressure - Remastered — Queen",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.259,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Cosita Dulce — Cecy Leos",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.399,
+          "step_distance": 0.073
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Melody — Little Venice",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.562,
+          "step_distance": 0.093
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Shoulder — Hitimpulse",
+          "genre": "edm",
+          "subgenre": "pop edm",
+          "mood": "angry",
+          "progress": 0.681,
+          "step_distance": 0.099
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Hot (feat. Gunna) — Young Thug",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "happy",
+          "progress": 0.815,
+          "step_distance": 0.081
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 0,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

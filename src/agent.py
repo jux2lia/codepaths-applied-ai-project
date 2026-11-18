@@ -253,8 +253,9 @@ def _act(pool: _Pool, waypoints: list[Waypoint], start: int, exclude: np.ndarray
     X = pool.X[picks]
     path["step_distance"] = np.r_[0.0, distance(X[1:], X[:-1])]
     path["score_parts"] = parts
-    path["lineage"] = [text for text, _, _ in lineage_cols]
-    path["lineage_source"] = [url for _, url, _ in lineage_cols]
+    # dtype=object keeps None as None (pandas would otherwise turn it into a truthy NaN).
+    path["lineage"] = pd.Series([text for text, _, _ in lineage_cols], dtype=object)
+    path["lineage_source"] = pd.Series([url for _, url, _ in lineage_cols], dtype=object)
     path["lineage_with_previous"] = [with_prev for _, _, with_prev in lineage_cols]
     return path, notes
 

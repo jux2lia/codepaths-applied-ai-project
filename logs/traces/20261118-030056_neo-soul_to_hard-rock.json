@@ -1,0 +1,141 @@
+{
+  "run": {
+    "started": "2026-11-18T03:00:56",
+    "playlist_file": "neo_soul.csv",
+    "args": {
+      "to": "hard rock",
+      "steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    },
+    "settings_used": {
+      "n_steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    }
+  },
+  "playlist": {
+    "songs": 15,
+    "matched": 15,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "hard rock",
+    "level": "subgenre"
+  },
+  "settings": {
+    "n_steps": 4,
+    "max_step": 0.12,
+    "max_revisions": 5,
+    "arrival_progress": 0.5,
+    "lineage": {
+      "enabled": true,
+      "edges_in_catalog": 19
+    }
+  },
+  "profile": {
+    "n_songs": 15,
+    "top_genres": {
+      "r&b": 15
+    },
+    "moods": {
+      "sad": 7,
+      "happy": 4,
+      "calm": 2,
+      "angry": 2
+    },
+    "start_song": "Put Your Records On — Corinne Bailey Rae",
+    "start_progress": 0.098
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.224,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.433,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.669,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.842,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Put Your Records On — Corinne Bailey Rae",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.098,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Nights Like This — After 7",
+          "genre": "r&b",
+          "subgenre": "new jack swing",
+          "mood": "happy",
+          "progress": 0.227,
+          "step_distance": 0.055
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Purple Eyes (feat. Phoebe Ryan) — The Knocks",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "happy",
+          "progress": 0.435,
+          "step_distance": 0.092
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Summer Air - DubVision Remix — Hardwell",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.682,
+          "step_distance": 0.085
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Erase The Pain — Palisades",
+          "genre": "rock",
+          "subgenre": "hard rock",
+          "mood": "angry",
+          "progress": 0.828,
+          "step_distance": 0.065
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 0,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

@@ -1,0 +1,245 @@
+{
+  "run": {
+    "started": "2026-11-18T03:01:02",
+    "playlist_file": "classic_rock.csv",
+    "args": {
+      "to": "big room",
+      "steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    },
+    "settings_used": {
+      "n_steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    }
+  },
+  "playlist": {
+    "songs": 15,
+    "matched": 15,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "big room",
+    "level": "subgenre"
+  },
+  "settings": {
+    "n_steps": 4,
+    "max_step": 0.12,
+    "max_revisions": 5,
+    "arrival_progress": 0.5,
+    "lineage": {
+      "enabled": true,
+      "edges_in_catalog": 19
+    }
+  },
+  "profile": {
+    "n_songs": 15,
+    "top_genres": {
+      "rock": 15
+    },
+    "moods": {
+      "happy": 7,
+      "angry": 5,
+      "sad": 2,
+      "calm": 1
+    },
+    "start_song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+    "start_progress": 0.093
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.214,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.421,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.66,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.838,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.093,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "85% — Loote",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.201,
+          "step_distance": 0.066
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Never Be Alone — TheFatRat",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.429,
+          "step_distance": 0.09
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "GfC — Albert Hammond, Jr.",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.651,
+          "step_distance": 0.135
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Damascus — LMNTRX",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "angry",
+          "progress": 0.835,
+          "step_distance": 0.097
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 3,
+          "detail": "jump of 0.135 > max 0.120"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 3: too big, insert a bridge halfway from step 2"
+      ]
+    },
+    {
+      "round": 1,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.214,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.421,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.542,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.66,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.838,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.093,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "85% — Loote",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.201,
+          "step_distance": 0.066
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Never Be Alone — TheFatRat",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.429,
+          "step_distance": 0.09
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Storm — Drist",
+          "genre": "edm",
+          "subgenre": "pop edm",
+          "mood": "angry",
+          "progress": 0.547,
+          "step_distance": 0.072
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "GfC — Albert Hammond, Jr.",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.651,
+          "step_distance": 0.107
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Damascus — LMNTRX",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "angry",
+          "progress": 0.835,
+          "step_distance": 0.097
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 1,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

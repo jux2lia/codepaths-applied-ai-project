@@ -199,6 +199,17 @@ def check_determinism(catalog: pd.DataFrame) -> tuple[bool, str]:
     return routes[0] == routes[1], "two runs, identical route" if routes[0] == routes[1] else "routes differ"
 
 
+def check_lineage(catalog: pd.DataFrame) -> tuple[bool, str]:
+    """RAG before/after: the same input with and without the lineage source."""
+    playlist = load_playlist(EXAMPLES / "sampled_classics.csv")
+    off = run_with_guardrails(catalog, playlist, "rap", use_lineage=False).result
+    on = run_with_guardrails(catalog, playlist, "rap", use_lineage=True).result
+    links = [t.split(",")[0] for t in on.path["lineage"] if t]
+    changed = off.path["track_id"].tolist() != on.path["track_id"].tolist()
+    ok = changed and bool(links) and on.passed
+    return ok, f"route changed: {changed}; lineage picks: {'; '.join(links) or 'none'}"
+
+
 def main(argv: list[str] | None = None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -209,6 +220,8 @@ def main(argv: list[str] | None = None) -> int:
 
     catalog = load_catalog()
     rows = [(s.name, s.expect, *run_scenario(s, catalog)) for s in SCENARIOS]
+    rows.append(("Lineage on vs off (sampled classics -> rap)",
+                 "lineage source changes the route via real sample links", *check_lineage(catalog)))
     rows.append(("Same input twice", "identical route both times", *check_determinism(catalog)))
     passed = sum(ok for _, _, ok, _ in rows)
 

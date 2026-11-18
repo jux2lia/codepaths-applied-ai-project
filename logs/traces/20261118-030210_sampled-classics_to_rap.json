@@ -1,0 +1,147 @@
+{
+  "run": {
+    "started": "2026-11-18T03:02:10",
+    "playlist_file": "sampled_classics.csv",
+    "args": {
+      "to": "rap",
+      "steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    },
+    "settings_used": {
+      "n_steps": 4,
+      "max_step": 0.12,
+      "lineage": true
+    }
+  },
+  "playlist": {
+    "songs": 14,
+    "matched": 14,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "rap",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 4,
+    "max_step": 0.12,
+    "max_revisions": 5,
+    "arrival_progress": 0.5,
+    "lineage": {
+      "enabled": true,
+      "edges_in_catalog": 19
+    }
+  },
+  "profile": {
+    "n_songs": 14,
+    "top_genres": {
+      "rock": 8,
+      "r&b": 5,
+      "latin": 1
+    },
+    "moods": {
+      "happy": 8,
+      "sad": 3,
+      "angry": 2,
+      "calm": 1
+    },
+    "start_song": "Under Pressure - Remastered — Queen",
+    "start_progress": 0.259
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.397,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.554,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.7,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.814,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Under Pressure - Remastered — Queen",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.259,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Cosita Dulce — Cecy Leos",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.399,
+          "step_distance": 0.073
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Changes — 2Pac",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "angry",
+          "progress": 0.574,
+          "step_distance": 0.105,
+          "lineage": "\"Changes\" (2Pac) samples \"The Way It Is\" (Bruce Hornsby), linked to a song in your playlist",
+          "lineage_source": "https://en.wikipedia.org/wiki/Changes_(Tupac_Shakur_song)"
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "King Kunta — Kendrick Lamar",
+          "genre": "pop",
+          "subgenre": "post-teen pop",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.068,
+          "lineage": "\"King Kunta\" (Kendrick Lamar) interpolates \"Smooth Criminal\" (Michael Jackson), linked to a song in your playlist",
+          "lineage_source": "https://en.wikipedia.org/wiki/King_Kunta"
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Hot (feat. Gunna) — Young Thug",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "happy",
+          "progress": 0.815,
+          "step_distance": 0.103
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 0,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

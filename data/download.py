@@ -2,7 +2,8 @@
 
 Dataset: "30000 Spotify Songs" (TidyTuesday, 2020-01-21), collected with the
 spotifyr R package. Also mirrored on Kaggle. Not committed to git (see .gitignore).
-Source: https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-01-21
+Source: https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-01-21
+License: the TidyTuesday repository is CC0 1.0.
 
 Usage:  python data/download.py
 """
@@ -13,7 +14,7 @@ import urllib.request
 from pathlib import Path
 
 URL = (
-    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/"
+    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/"
     "data/2020/2020-01-21/spotify_songs.csv"
 )
 SHA256 = "9902920cfe4940f0914ebb6716801a42f7f19ac88fbd6693eaae7e2822b16845"
