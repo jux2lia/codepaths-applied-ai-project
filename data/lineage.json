@@ -1,0 +1,252 @@
+{
+  "description": "Song lineage for Bubble Breaker: 'to' samples, interpolates, remakes or credits 'from'. Hand-picked famous relationships where BOTH songs are in the catalog (data/raw/spotify_songs.csv); each was checked against the linked Wikipedia article, and 'evidence' quotes it. Small and hand-picked: not a complete map of who sampled whom.",
+  "edges": [
+    {
+      "from": {
+        "title": "Through the Fire",
+        "artist": "Chaka Khan"
+      },
+      "to": {
+        "title": "Through The Wire",
+        "artist": "Kanye West"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Through_the_Wire",
+      "evidence": "The song prominently samples (and its title is a play on) Chaka Khan's 1985 single \"Through the Fire\", and thus, Tom Keane of The Keane Brothers, Cynthia Weil, and David Foster, who wrote \"Through the Fire\", earn writing credits."
+    },
+    {
+      "from": {
+        "title": "Under Pressure",
+        "artist": "Queen"
+      },
+      "to": {
+        "title": "Ice Ice Baby",
+        "artist": "Vanilla Ice"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Ice_Ice_Baby",
+      "evidence": "\"Ice Ice Baby\" samples the bassline of the song \"Under Pressure\" by British rock band Queen and British singer David Bowie, who did not receive songwriting credit or royalties until after it had become a hit."
+    },
+    {
+      "from": {
+        "title": "Dream On",
+        "artist": "Aerosmith"
+      },
+      "to": {
+        "title": "Sing For The Moment",
+        "artist": "Eminem"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Sing_for_the_Moment",
+      "evidence": "The song samples \"Dream On\" by American rock band Aerosmith."
+    },
+    {
+      "from": {
+        "title": "Thank You",
+        "artist": "Dido"
+      },
+      "to": {
+        "title": "Stan",
+        "artist": "Eminem"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Stan_(song)",
+      "evidence": "\"Stan\" is a song by American rapper Eminem, with vocals sampled from the opening lines of English singer Dido's song \"Thank You\"."
+    },
+    {
+      "from": {
+        "title": "I'm Coming Out",
+        "artist": "Diana Ross"
+      },
+      "to": {
+        "title": "Mo Money Mo Problems",
+        "artist": "The Notorious B.I.G."
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Mo_Money_Mo_Problems",
+      "evidence": "\"Mo Money Mo Problems\" contains a sample and an interpolation of \"I'm Coming Out\" by Diana Ross, hence Bernard Edwards and Nile Rodgers are credited as songwriters; the sampled portions are heard in the production, while the hook is interpolative and performed by Kelly Price in an uncredited appeara"
+    },
+    {
+      "from": {
+        "title": "The Way It Is",
+        "artist": "Bruce Hornsby"
+      },
+      "to": {
+        "title": "Changes",
+        "artist": "2Pac"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Changes_(Tupac_Shakur_song)",
+      "evidence": "\"Changes\" samples Bruce Hornsby and the Range's 1986 song \"The Way It Is\"."
+    },
+    {
+      "from": {
+        "title": "We Will Rock You",
+        "artist": "Queen"
+      },
+      "to": {
+        "title": "'Till I Collapse",
+        "artist": "Eminem"
+      },
+      "type": "interpolation",
+      "source_url": "https://en.wikipedia.org/wiki/%27Till_I_Collapse",
+      "evidence": "The song interpolates the 1977 song \"We Will Rock You\" by British rock band Queen; as a result, Brian May is credited as a songwriter."
+    },
+    {
+      "from": {
+        "title": "No Scrubs",
+        "artist": "TLC"
+      },
+      "to": {
+        "title": "Shape of You",
+        "artist": "Ed Sheeran"
+      },
+      "type": "interpolation",
+      "source_url": "https://en.wikipedia.org/wiki/Shape_of_You",
+      "evidence": "Due to its interpolation of \"No Scrubs\" by TLC, Kandi Burruss, Tameka \"Tiny\" Cottle, and Kevin \"She'kspere\" Briggs are also credited as writers."
+    },
+    {
+      "from": {
+        "title": "I Won't Back Down",
+        "artist": "Tom Petty"
+      },
+      "to": {
+        "title": "Stay With Me",
+        "artist": "Sam Smith"
+      },
+      "type": "credited_similarity",
+      "source_url": "https://en.wikipedia.org/wiki/Stay_with_Me_(Sam_Smith_song)",
+      "evidence": "The song was written by Smith, James Napier, and William Phillips, with Tom Petty and Jeff Lynne later receiving co-writer credits due to the song's noted melodic similarity to Petty's single \"I Won't Back Down\"."
+    },
+    {
+      "from": {
+        "title": "Shape Of My Heart",
+        "artist": "Sting"
+      },
+      "to": {
+        "title": "Lucid Dreams",
+        "artist": "Juice WRLD"
+      },
+      "type": "interpolation",
+      "source_url": "https://en.wikipedia.org/wiki/Lucid_Dreams_(Juice_Wrld_song)",
+      "evidence": "In November 2018, producer Nick Mira revealed that Sting owned 85% of the rights to \"Lucid Dreams,\" which features an interpolation of his 1993 hit \"Shape of My Heart\"."
+    },
+    {
+      "from": {
+        "title": "Ex-Factor",
+        "artist": "Ms. Lauryn Hill"
+      },
+      "to": {
+        "title": "Nice For What",
+        "artist": "Drake"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Nice_for_What",
+      "evidence": "It contains a sample from \"Ex-Factor\", written and performed by Lauryn Hill, which itself samples \"Can It Be All So Simple\", written and performed by Wu-Tang Clan."
+    },
+    {
+      "from": {
+        "title": "Levels",
+        "artist": "Avicii"
+      },
+      "to": {
+        "title": "Good Feeling",
+        "artist": "Flo Rida"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Good_Feeling_(song)",
+      "evidence": "The song contains a sample from the 2011 song \"Levels\" by Avicii, which in turn samples the 1962 song \"Something's Got a Hold on Me\" by Etta James."
+    },
+    {
+      "from": {
+        "title": "Baby Got Back",
+        "artist": "Sir Mix-A-Lot"
+      },
+      "to": {
+        "title": "Anaconda",
+        "artist": "Nicki Minaj"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Anaconda_(song)",
+      "evidence": "The song was produced by Polow da Don, DJ Spydr, and Da Internz, and prominently samples \"Baby Got Back\" (1992) by Sir Mix-a-Lot."
+    },
+    {
+      "from": {
+        "title": "Better Off Alone",
+        "artist": "Alice Deejay"
+      },
+      "to": {
+        "title": "Play Hard",
+        "artist": "David Guetta"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Play_Hard",
+      "evidence": "It features a prominent synthesizer riff sampled from the 1998 song \"Better Off Alone\" by Dutch Eurodance project Alice Deejay; as a result, Sebastiaan Molijn and Eelke Kalberg are credited as songwriters."
+    },
+    {
+      "from": {
+        "title": "Voodoo Song",
+        "artist": "Willy William"
+      },
+      "to": {
+        "title": "Mi Gente",
+        "artist": "J Balvin"
+      },
+      "type": "remake",
+      "source_url": "https://en.wikipedia.org/wiki/Mi_Gente",
+      "evidence": "It is a remake of Willy William's song \"Voodoo Song\" which is an original French song by Willy William that went viral on Facebook in 2016 and released one year after."
+    },
+    {
+      "from": {
+        "title": "Hollywood Swinging",
+        "artist": "Kool & The Gang"
+      },
+      "to": {
+        "title": "Feel so Good",
+        "artist": "Mase"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Feel_So_Good",
+      "evidence": "Its production – which samples Kool & the Gang's \"Hollywood Swinging\" and interpolates the Miami Sound Machine's \"Bad Boy\" – was handled by Bad Boy's in-house producer Deric Angelettie, as well as label boss Sean \"Puffy\" Combs."
+    },
+    {
+      "from": {
+        "title": "P.Y.T.",
+        "artist": "Michael Jackson"
+      },
+      "to": {
+        "title": "Good Life",
+        "artist": "Kanye West"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/Good_Life_(Kanye_West_song)",
+      "evidence": "A pop number, it samples Michael Jackson's \"P.Y.T.\""
+    },
+    {
+      "from": {
+        "title": "Smooth Criminal",
+        "artist": "Michael Jackson"
+      },
+      "to": {
+        "title": "King Kunta",
+        "artist": "Kendrick Lamar"
+      },
+      "type": "interpolation",
+      "source_url": "https://en.wikipedia.org/wiki/King_Kunta",
+      "evidence": "Contains \"resung lyrics from \"Smooth Criminal\" (1987), written and performed by Michael Jackson\"."
+    },
+    {
+      "from": {
+        "title": "Children's Story",
+        "artist": "Slick Rick"
+      },
+      "to": {
+        "title": "This Is How We Do It",
+        "artist": "Montell Jordan"
+      },
+      "type": "sample",
+      "source_url": "https://en.wikipedia.org/wiki/This_Is_How_We_Do_It",
+      "evidence": "It features Jordan singing over an enhanced Teddy Riley drumbeat sample of Slick Rick's \"Children's Story\" which in turn has an added interpolation of the bass of Bob James' \"Nautilus\"."
+    }
+  ]
+}

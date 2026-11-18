@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets — never commit API keys
+.env
+.streamlit/secrets.toml
+
+# Raw downloaded data (re-create with data/download.py)
+data/raw/
+
+# Your personal Spotify export (keep private; use examples/ for demos)
+data/my_playlist*.csv
+
+# Run log grows with every run; sample traces in logs/traces/ can be committed
+logs/*.log
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db

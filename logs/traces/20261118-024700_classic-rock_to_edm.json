@@ -1,0 +1,1131 @@
+{
+  "run": {
+    "started": "2026-11-18T02:47:00",
+    "playlist_file": "classic_rock.csv",
+    "args": {
+      "to": "edm",
+      "steps": 6,
+      "max_step": 0.09
+    },
+    "settings_used": {
+      "n_steps": 6,
+      "max_step": 0.09
+    }
+  },
+  "playlist": {
+    "songs": 15,
+    "matched": 15,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "edm",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 6,
+    "max_step": 0.09,
+    "max_revisions": 5,
+    "arrival_progress": 0.5
+  },
+  "profile": {
+    "n_songs": 15,
+    "top_genres": {
+      "rock": 15
+    },
+    "moods": {
+      "happy": 7,
+      "angry": 5,
+      "sad": 2,
+      "calm": 1
+    },
+    "start_song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+    "start_progress": 0.238
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.119
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.103
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 4,
+          "detail": "jump of 0.119 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.103 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 5: too big, insert a bridge halfway from step 4",
+        "step 4: too big, insert a bridge halfway from step 3"
+      ]
+    },
+    {
+      "round": 1,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.593,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.695,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Fall in the Fall — Jelly Roll",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "angry",
+          "progress": 0.596,
+          "step_distance": 0.07
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.102
+        },
+        {
+          "step": 6,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.111
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.102 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.111 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 6: too big, insert a bridge halfway from step 5",
+        "step 5: too big, insert a bridge halfway from step 4"
+      ]
+    },
+    {
+      "round": 2,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.593,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.623,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.667,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.695,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Fall in the Fall — Jelly Roll",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "angry",
+          "progress": 0.596,
+          "step_distance": 0.07
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Dive — Cozmoe",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "angry",
+          "progress": 0.621,
+          "step_distance": 0.043
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.105
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "Personal Jesus — Depeche Mode",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.67,
+          "step_distance": 0.066
+        },
+        {
+          "step": 8,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.073
+        },
+        {
+          "step": 9,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 10,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.105 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 6: too big, insert a bridge halfway from step 5"
+      ]
+    },
+    {
+      "round": 3,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.593,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.623,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.635,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.667,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.695,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Fall in the Fall — Jelly Roll",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "angry",
+          "progress": 0.596,
+          "step_distance": 0.07
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Dive — Cozmoe",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "angry",
+          "progress": 0.621,
+          "step_distance": 0.043
+        },
+        {
+          "step": 6,
+          "kind": "bridge",
+          "song": "Get Along — Behmer",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.632,
+          "step_distance": 0.05
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.109
+        },
+        {
+          "step": 8,
+          "kind": "bridge",
+          "song": "Personal Jesus — Depeche Mode",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.67,
+          "step_distance": 0.066
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.073
+        },
+        {
+          "step": 10,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 11,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 7,
+          "detail": "jump of 0.109 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 7: too big, insert a bridge halfway from step 6"
+      ]
+    },
+    {
+      "round": 4,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.593,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.623,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.635,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.64,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.667,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.695,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Fall in the Fall — Jelly Roll",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "angry",
+          "progress": 0.596,
+          "step_distance": 0.07
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Dive — Cozmoe",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "angry",
+          "progress": 0.621,
+          "step_distance": 0.043
+        },
+        {
+          "step": 6,
+          "kind": "bridge",
+          "song": "Get Along — Behmer",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.632,
+          "step_distance": 0.05
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "Warpaint — 88rising",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.638,
+          "step_distance": 0.036
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.101
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Personal Jesus — Depeche Mode",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.67,
+          "step_distance": 0.066
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.073
+        },
+        {
+          "step": 11,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 12,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 8,
+          "detail": "jump of 0.101 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 8: too big, but already at 12 waypoints"
+      ]
+    },
+    {
+      "round": 5,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.327,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.429,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.539,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.593,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.623,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.635,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.64,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.644,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.667,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.695,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Rocket Man (I Think It's Going To Be A Long, Long Time) — Elton John",
+          "genre": "rock",
+          "subgenre": "classic rock",
+          "mood": "angry",
+          "progress": 0.238,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Made to Love Ya — Gerald Levert",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.33,
+          "step_distance": 0.072
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Paradise — T-SQUARE",
+          "genre": "rock",
+          "subgenre": "album rock",
+          "mood": "angry",
+          "progress": 0.433,
+          "step_distance": 0.075
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Night Drive — Gorgon City",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.536,
+          "step_distance": 0.056
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Fall in the Fall — Jelly Roll",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "angry",
+          "progress": 0.596,
+          "step_distance": 0.07
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Dive — Cozmoe",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "angry",
+          "progress": 0.621,
+          "step_distance": 0.043
+        },
+        {
+          "step": 6,
+          "kind": "bridge",
+          "song": "Get Along — Behmer",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.632,
+          "step_distance": 0.05
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "Warpaint — 88rising",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "angry",
+          "progress": 0.638,
+          "step_distance": 0.036
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Do You Feel It? — Chaos Chaos",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.649,
+          "step_distance": 0.101
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Personal Jesus — Depeche Mode",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.67,
+          "step_distance": 0.066
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.073
+        },
+        {
+          "step": 11,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 12,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 8,
+          "detail": "jump of 0.101 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": false,
+    "revisions": 5,
+    "remaining_failures": [
+      {
+        "check": "step_too_big",
+        "step": 8,
+        "detail": "jump of 0.101 > max 0.090"
+      }
+    ],
+    "warnings": [
+      "Hit the revision cap (5); returning the path with the fewest failed checks (1)."
+    ]
+  },
+  "guardrail_warnings": []
+}

@@ -1,0 +1,1336 @@
+{
+  "run": {
+    "started": "2026-11-18T02:42:54",
+    "playlist_file": "my_playlist.csv",
+    "args": {
+      "to": "southern hip hop",
+      "steps": 6,
+      "max_step": 0.09
+    },
+    "settings_used": {
+      "n_steps": 6,
+      "max_step": 0.09
+    }
+  },
+  "playlist": {
+    "songs": 19,
+    "matched": 6,
+    "match_rate": 0.316,
+    "unmatched": [
+      "Lovers Rock — TV Girl",
+      "Heart To Heart — Mac DeMarco",
+      "My Kind of Woman — Mac DeMarco",
+      "Bad Habit — Steve Lacy",
+      "Telephones — Vacations",
+      "One More Hour — Tame Impala",
+      "YKWIM? — Yot Club",
+      "Young — Vacations",
+      "Show Me How — Men I Trust",
+      "Twilight — bôa",
+      "Late Nights & Heartbreak — Hannah Williams;The Affirmations",
+      "Les — Childish Gambino",
+      "Uuuu — Steve Lacy"
+    ]
+  },
+  "destination": {
+    "name": "southern hip hop",
+    "level": "subgenre"
+  },
+  "settings": {
+    "n_steps": 6,
+    "max_step": 0.09,
+    "max_revisions": 5,
+    "arrival_progress": 0.5
+  },
+  "profile": {
+    "n_songs": 6,
+    "top_genres": {
+      "r&b": 5,
+      "rock": 1
+    },
+    "moods": {
+      "happy": 3,
+      "calm": 2,
+      "sad": 1
+    },
+    "start_song": "Redbone — Childish Gambino",
+    "start_progress": 0.593
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Palace — Gavin Santi",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.673,
+          "step_distance": 0.07
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Crept and We Came — Bone Thugs-N-Harmony",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.724,
+          "step_distance": 0.089
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.053
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.123
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.123 > max 0.090"
+        },
+        {
+          "check": "progress_dropped",
+          "step": 3,
+          "detail": "compass fell 0.75 -> 0.67"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 3: require compass >= 0.75",
+        "step 6: too big, insert a bridge halfway from step 5",
+        "step 2: too big, insert a bridge halfway from step 1"
+      ]
+    },
+    {
+      "round": 1,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.748,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "bridge",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Envy Me — Calboy",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.76,
+          "step_distance": 0.108
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "OTRO CHEKE — Rels B",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.748,
+          "step_distance": 0.063
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Crept and We Came — Bone Thugs-N-Harmony",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.724,
+          "step_distance": 0.088
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.053
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "Buona (Cattiva) Sorte — Tiziano Ferro",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "happy",
+          "progress": 0.749,
+          "step_distance": 0.096
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.065
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 3,
+          "detail": "jump of 0.108 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 7,
+          "detail": "jump of 0.096 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 7: too big, insert a bridge halfway from step 6",
+        "step 3: too big, insert a bridge halfway from step 2",
+        "step 2: too big, insert a bridge halfway from step 1"
+      ]
+    },
+    {
+      "round": 2,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.753,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.748,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "bridge",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "PRESS — Boslen",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.654,
+          "step_distance": 0.053
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Envy Me — Calboy",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.76,
+          "step_distance": 0.099
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Meu Olhar — WC no Beat",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "calm",
+          "progress": 0.773,
+          "step_distance": 0.072
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "OTRO CHEKE — Rels B",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.748,
+          "step_distance": 0.065
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Crept and We Came — Bone Thugs-N-Harmony",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.724,
+          "step_distance": 0.088
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.053
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Buona (Cattiva) Sorte — Tiziano Ferro",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "happy",
+          "progress": 0.749,
+          "step_distance": 0.096
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Swangin' — blackwave.",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.755,
+          "step_distance": 0.069
+        },
+        {
+          "step": 11,
+          "kind": "planned",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.084
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 4,
+          "detail": "jump of 0.099 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 9,
+          "detail": "jump of 0.096 > max 0.090"
+        },
+        {
+          "check": "progress_dropped",
+          "step": 3,
+          "detail": "compass fell 0.75 -> 0.65"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 3: require compass >= 0.75",
+        "step 9: too big, insert a bridge halfway from step 8",
+        "step 4: too big, but already at 12 waypoints",
+        "step 2: too big, but already at 12 waypoints"
+      ]
+    },
+    {
+      "round": 3,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.753,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.748,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "bridge",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Meu Olhar — WC no Beat",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "calm",
+          "progress": 0.773,
+          "step_distance": 0.057
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Envy Me — Calboy",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.76,
+          "step_distance": 0.072
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Tha Crossroads — Bone Thugs-N-Harmony",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "calm",
+          "progress": 0.521,
+          "step_distance": 0.104
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "OTRO CHEKE — Rels B",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.748,
+          "step_distance": 0.126
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Crept and We Came — Bone Thugs-N-Harmony",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.724,
+          "step_distance": 0.088
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.053
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Buona (Cattiva) Sorte — Tiziano Ferro",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "happy",
+          "progress": 0.749,
+          "step_distance": 0.096
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Hustlin' — Rick Ross",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "happy",
+          "progress": 0.742,
+          "step_distance": 0.081
+        },
+        {
+          "step": 11,
+          "kind": "bridge",
+          "song": "Swangin' — blackwave.",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.755,
+          "step_distance": 0.094
+        },
+        {
+          "step": 12,
+          "kind": "planned",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.084
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "artist_repeat",
+          "step": 7,
+          "detail": "Bone Thugs-N-Harmony already at step 5"
+        },
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.104 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.126 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 9,
+          "detail": "jump of 0.096 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 11,
+          "detail": "jump of 0.094 > max 0.090"
+        },
+        {
+          "check": "progress_dropped",
+          "step": 5,
+          "detail": "compass fell 0.76 -> 0.52"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 7: ban Bone Thugs-N-Harmony and pick again",
+        "step 5: require compass >= 0.76",
+        "step 11: too big, but already at 12 waypoints",
+        "step 9: too big, but already at 12 waypoints",
+        "step 6: too big, but already at 12 waypoints",
+        "step 5: too big, but already at 12 waypoints",
+        "step 2: too big, but already at 12 waypoints"
+      ]
+    },
+    {
+      "round": 4,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.753,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm",
+          "min_progress": 0.76
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy",
+          "banned_artists": [
+            "Bone Thugs-N-Harmony"
+          ]
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.748,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "bridge",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Meu Olhar — WC no Beat",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "calm",
+          "progress": 0.773,
+          "step_distance": 0.057
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Envy Me — Calboy",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.76,
+          "step_distance": 0.072
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Kissing Mouths — Natania",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "calm",
+          "progress": 0.779,
+          "step_distance": 0.098
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "OTRO CHEKE — Rels B",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.748,
+          "step_distance": 0.124
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "2065 — AK Ausserkontrolle",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "happy",
+          "progress": 0.685,
+          "step_distance": 0.099
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.062
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Buona (Cattiva) Sorte — Tiziano Ferro",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "happy",
+          "progress": 0.749,
+          "step_distance": 0.096
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Hustlin' — Rick Ross",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "happy",
+          "progress": 0.742,
+          "step_distance": 0.081
+        },
+        {
+          "step": 11,
+          "kind": "bridge",
+          "song": "Swangin' — blackwave.",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.755,
+          "step_distance": 0.094
+        },
+        {
+          "step": 12,
+          "kind": "planned",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.084
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.098 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.124 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 7,
+          "detail": "jump of 0.099 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 9,
+          "detail": "jump of 0.096 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 11,
+          "detail": "jump of 0.094 > max 0.090"
+        },
+        {
+          "check": "progress_dropped",
+          "step": 7,
+          "detail": "compass fell 0.75 -> 0.68"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 7: require compass >= 0.75",
+        "step 11: too big, but already at 12 waypoints",
+        "step 9: too big, but already at 12 waypoints",
+        "step 7: too big, but already at 12 waypoints",
+        "step 6: too big, but already at 12 waypoints",
+        "step 5: too big, but already at 12 waypoints",
+        "step 2: too big, but already at 12 waypoints"
+      ]
+    },
+    {
+      "round": 5,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.624,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.702,
+          "target_mood": "calm",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.753,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.654,
+          "target_mood": "calm",
+          "min_progress": 0.76
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.683,
+          "target_mood": "happy",
+          "min_progress": 0.746
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.711,
+          "target_mood": "happy",
+          "banned_artists": [
+            "Bone Thugs-N-Harmony"
+          ],
+          "min_progress": 0.748
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.737,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.745,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.748,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.761,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.593,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "You & Me — Mia X",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "calm",
+          "progress": 0.655,
+          "step_distance": 0.08
+        },
+        {
+          "step": 2,
+          "kind": "bridge",
+          "song": "Nie chcę — O.S.T.R.",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.746,
+          "step_distance": 0.101
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Meu Olhar — WC no Beat",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "calm",
+          "progress": 0.773,
+          "step_distance": 0.057
+        },
+        {
+          "step": 4,
+          "kind": "bridge",
+          "song": "Envy Me — Calboy",
+          "genre": "rap",
+          "subgenre": "hip hop",
+          "mood": "calm",
+          "progress": 0.76,
+          "step_distance": 0.072
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Kissing Mouths — Natania",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "calm",
+          "progress": 0.779,
+          "step_distance": 0.098
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "OTRO CHEKE — Rels B",
+          "genre": "rap",
+          "subgenre": "trap",
+          "mood": "happy",
+          "progress": 0.748,
+          "step_distance": 0.124
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Swangin' — blackwave.",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.755,
+          "step_distance": 0.095
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Shortie Like Mine — Bow Wow",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "happy",
+          "progress": 0.74,
+          "step_distance": 0.067
+        },
+        {
+          "step": 9,
+          "kind": "bridge",
+          "song": "Buona (Cattiva) Sorte — Tiziano Ferro",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "happy",
+          "progress": 0.749,
+          "step_distance": 0.096
+        },
+        {
+          "step": 10,
+          "kind": "bridge",
+          "song": "Hustlin' — Rick Ross",
+          "genre": "rap",
+          "subgenre": "gangster rap",
+          "mood": "happy",
+          "progress": 0.742,
+          "step_distance": 0.081
+        },
+        {
+          "step": 11,
+          "kind": "bridge",
+          "song": "1994 — Quasimoto",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.757,
+          "step_distance": 0.122
+        },
+        {
+          "step": 12,
+          "kind": "planned",
+          "song": "Kobe — Chief Keef",
+          "genre": "rap",
+          "subgenre": "southern hip hop",
+          "mood": "happy",
+          "progress": 0.76,
+          "step_distance": 0.105
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 2,
+          "detail": "jump of 0.101 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.098 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 6,
+          "detail": "jump of 0.124 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 7,
+          "detail": "jump of 0.095 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 9,
+          "detail": "jump of 0.096 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 11,
+          "detail": "jump of 0.122 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 12,
+          "detail": "jump of 0.105 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": false,
+    "revisions": 5,
+    "remaining_failures": [
+      {
+        "check": "step_too_big",
+        "step": 2,
+        "detail": "jump of 0.101 > max 0.090"
+      },
+      {
+        "check": "step_too_big",
+        "step": 3,
+        "detail": "jump of 0.108 > max 0.090"
+      },
+      {
+        "check": "step_too_big",
+        "step": 7,
+        "detail": "jump of 0.096 > max 0.090"
+      }
+    ],
+    "warnings": [
+      "Hit the revision cap (5); returning the path with the fewest failed checks (3)."
+    ]
+  },
+  "guardrail_warnings": [
+    "Only 6 of 19 songs (32%) are in the catalog; your taste profile is based on just those."
+  ]
+}

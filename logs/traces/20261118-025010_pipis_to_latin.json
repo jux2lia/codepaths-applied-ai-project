@@ -1,0 +1,142 @@
+{
+  "run": {
+    "started": "2026-11-18T02:50:10",
+    "playlist_file": "pipis!_🔵.csv",
+    "args": {
+      "to": "latin",
+      "steps": 4,
+      "max_step": 0.2
+    },
+    "settings_used": {
+      "n_steps": 4,
+      "max_step": 0.2
+    }
+  },
+  "playlist": {
+    "songs": 33,
+    "matched": 28,
+    "match_rate": 0.848,
+    "unmatched": [
+      "GUY.exe — Superfruit",
+      "Sports — Beach Bunny",
+      "Prom Queen — Beach Bunny",
+      "Levitating — Dua Lipa",
+      "Dirty Cash (Money Talks) - Sold Out 7 Inch Mix — The Adventures Of Stevie V"
+    ]
+  },
+  "destination": {
+    "name": "latin",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 4,
+    "max_step": 0.2,
+    "max_revisions": 5,
+    "arrival_progress": 0.5
+  },
+  "profile": {
+    "n_songs": 28,
+    "top_genres": {
+      "pop": 21,
+      "latin": 4,
+      "r&b": 3
+    },
+    "moods": {
+      "happy": 25,
+      "angry": 2,
+      "sad": 1
+    },
+    "start_song": "TiK ToK — Kesha",
+    "start_progress": 0.648
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.65,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.652,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.653,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.655,
+          "target_mood": "happy",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "TiK ToK — Kesha",
+          "genre": "pop",
+          "subgenre": "dance pop",
+          "mood": "happy",
+          "progress": 0.648,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Lady (feat. Pitbull) — Austin Mahone",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "happy",
+          "progress": 0.653,
+          "step_distance": 0.065
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Tentándome — Juan Magán",
+          "genre": "latin",
+          "subgenre": "latin hip hop",
+          "mood": "happy",
+          "progress": 0.643,
+          "step_distance": 0.045
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "With Or Without You - Kage Remix — Maddix",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "happy",
+          "progress": 0.653,
+          "step_distance": 0.075
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Young & Reckless — Jason Thurell",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "happy",
+          "progress": 0.657,
+          "step_distance": 0.088
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 0,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

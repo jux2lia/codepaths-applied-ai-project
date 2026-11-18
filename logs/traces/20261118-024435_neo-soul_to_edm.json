@@ -1,0 +1,520 @@
+{
+  "run": {
+    "started": "2026-11-18T02:44:35",
+    "playlist_file": "neo_soul.csv",
+    "args": {
+      "to": "edm",
+      "steps": 6,
+      "max_step": 0.09
+    },
+    "settings_used": {
+      "n_steps": 6,
+      "max_step": 0.09
+    }
+  },
+  "playlist": {
+    "songs": 15,
+    "matched": 15,
+    "match_rate": 1.0,
+    "unmatched": []
+  },
+  "destination": {
+    "name": "edm",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 6,
+    "max_step": 0.09,
+    "max_revisions": 5,
+    "arrival_progress": 0.5
+  },
+  "profile": {
+    "n_songs": 15,
+    "top_genres": {
+      "r&b": 15
+    },
+    "moods": {
+      "sad": 7,
+      "happy": 4,
+      "calm": 2,
+      "angry": 2
+    },
+    "start_song": "Put Your Records On — Corinne Bailey Rae",
+    "start_progress": 0.219
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.307,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.412,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.525,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.636,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.734,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Put Your Records On — Corinne Bailey Rae",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.219,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Porque Me Tratas Así? — Wisin & Yandel",
+          "genre": "latin",
+          "subgenre": "reggaeton",
+          "mood": "happy",
+          "progress": 0.298,
+          "step_distance": 0.031
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Look into My Eyes — Brando",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "angry",
+          "progress": 0.402,
+          "step_distance": 0.07
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Paradise — So So Sun",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.525,
+          "step_distance": 0.091
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Policy Of Truth - 2006 Remastered Version — Depeche Mode",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.638,
+          "step_distance": 0.093
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.091
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 3,
+          "detail": "jump of 0.091 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 4,
+          "detail": "jump of 0.093 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 5,
+          "detail": "jump of 0.091 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 5: too big, insert a bridge halfway from step 4",
+        "step 4: too big, insert a bridge halfway from step 3",
+        "step 3: too big, insert a bridge halfway from step 2"
+      ]
+    },
+    {
+      "round": 1,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.307,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.412,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.463,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.525,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.583,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.636,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.69,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.734,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Put Your Records On — Corinne Bailey Rae",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.219,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Porque Me Tratas Así? — Wisin & Yandel",
+          "genre": "latin",
+          "subgenre": "reggaeton",
+          "mood": "happy",
+          "progress": 0.298,
+          "step_distance": 0.031
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Look into My Eyes — Brando",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "angry",
+          "progress": 0.402,
+          "step_distance": 0.07
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Higher Love — Kygo",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.462,
+          "step_distance": 0.075
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Paradise — So So Sun",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.525,
+          "step_distance": 0.058
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Good Girls — LANY",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.571,
+          "step_distance": 0.058
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "Policy Of Truth - 2006 Remastered Version — Depeche Mode",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.638,
+          "step_distance": 0.05
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.102
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 9,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 7,
+          "detail": "jump of 0.102 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 7: too big, insert a bridge halfway from step 6"
+      ]
+    },
+    {
+      "round": 2,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.307,
+          "target_mood": "happy"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.412,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.463,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.525,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.583,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.636,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.662,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.69,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.734,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Put Your Records On — Corinne Bailey Rae",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "happy",
+          "progress": 0.219,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "Porque Me Tratas Así? — Wisin & Yandel",
+          "genre": "latin",
+          "subgenre": "reggaeton",
+          "mood": "happy",
+          "progress": 0.298,
+          "step_distance": 0.031
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Look into My Eyes — Brando",
+          "genre": "edm",
+          "subgenre": "big room",
+          "mood": "angry",
+          "progress": 0.402,
+          "step_distance": 0.07
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Higher Love — Kygo",
+          "genre": "latin",
+          "subgenre": "tropical",
+          "mood": "angry",
+          "progress": 0.462,
+          "step_distance": 0.075
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Paradise — So So Sun",
+          "genre": "pop",
+          "subgenre": "electropop",
+          "mood": "angry",
+          "progress": 0.525,
+          "step_distance": 0.058
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Good Girls — LANY",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.571,
+          "step_distance": 0.058
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "Policy Of Truth - 2006 Remastered Version — Depeche Mode",
+          "genre": "rock",
+          "subgenre": "permanent wave",
+          "mood": "angry",
+          "progress": 0.638,
+          "step_distance": 0.05
+        },
+        {
+          "step": 7,
+          "kind": "bridge",
+          "song": "No Style — Bassjackers",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.665,
+          "step_distance": 0.086
+        },
+        {
+          "step": 8,
+          "kind": "bridge",
+          "song": "Lift Off! - Radio Edit — W&W",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.685,
+          "step_distance": 0.061
+        },
+        {
+          "step": 9,
+          "kind": "planned",
+          "song": "Shining Star (Pornocult Vocal Mix) — Getfar",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.737,
+          "step_distance": 0.041
+        },
+        {
+          "step": 10,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.068
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 2,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": []
+}

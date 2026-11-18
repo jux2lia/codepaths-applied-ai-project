@@ -1,0 +1,336 @@
+{
+  "run": {
+    "started": "2026-11-18T02:43:44",
+    "playlist_file": "my_playlist.csv",
+    "args": {
+      "to": "edm",
+      "steps": 6,
+      "max_step": 0.09
+    },
+    "settings_used": {
+      "n_steps": 6,
+      "max_step": 0.09
+    }
+  },
+  "playlist": {
+    "songs": 19,
+    "matched": 6,
+    "match_rate": 0.316,
+    "unmatched": [
+      "Lovers Rock — TV Girl",
+      "Heart To Heart — Mac DeMarco",
+      "My Kind of Woman — Mac DeMarco",
+      "Bad Habit — Steve Lacy",
+      "Telephones — Vacations",
+      "One More Hour — Tame Impala",
+      "YKWIM? — Yot Club",
+      "Young — Vacations",
+      "Show Me How — Men I Trust",
+      "Twilight — bôa",
+      "Late Nights & Heartbreak — Hannah Williams;The Affirmations",
+      "Les — Childish Gambino",
+      "Uuuu — Steve Lacy"
+    ]
+  },
+  "destination": {
+    "name": "edm",
+    "level": "genre"
+  },
+  "settings": {
+    "n_steps": 6,
+    "max_step": 0.09,
+    "max_revisions": 5,
+    "arrival_progress": 0.5
+  },
+  "profile": {
+    "n_songs": 6,
+    "top_genres": {
+      "r&b": 5,
+      "rock": 1
+    },
+    "moods": {
+      "happy": 3,
+      "calm": 2,
+      "sad": 1
+    },
+    "start_song": "Redbone — Childish Gambino",
+    "start_progress": 0.109
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.182,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.287,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.422,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.57,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.706,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.109,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "End Of The Road — Boyz II Men",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "calm",
+          "progress": 0.183,
+          "step_distance": 0.086
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Freek'n You — Jodeci",
+          "genre": "r&b",
+          "subgenre": "new jack swing",
+          "mood": "angry",
+          "progress": 0.288,
+          "step_distance": 0.064
+        },
+        {
+          "step": 3,
+          "kind": "planned",
+          "song": "Dear Society — Madison Beer",
+          "genre": "pop",
+          "subgenre": "post-teen pop",
+          "mood": "angry",
+          "progress": 0.426,
+          "step_distance": 0.093
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Good Girls — LANY",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.571,
+          "step_distance": 0.114
+        },
+        {
+          "step": 5,
+          "kind": "planned",
+          "song": "Rise up - Club mix — Yves Larock",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.715,
+          "step_distance": 0.075
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.08
+        }
+      ],
+      "failed_checks": [
+        {
+          "check": "step_too_big",
+          "step": 3,
+          "detail": "jump of 0.093 > max 0.090"
+        },
+        {
+          "check": "step_too_big",
+          "step": 4,
+          "detail": "jump of 0.114 > max 0.090"
+        }
+      ],
+      "notes": [],
+      "fixes": [
+        "step 4: too big, insert a bridge halfway from step 3",
+        "step 3: too big, insert a bridge halfway from step 2"
+      ]
+    },
+    {
+      "round": 1,
+      "waypoints": [
+        {
+          "kind": "planned",
+          "target_progress": 0.182,
+          "target_mood": "calm"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.287,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.354,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.422,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "bridge",
+          "target_progress": 0.499,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.57,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.706,
+          "target_mood": "angry"
+        },
+        {
+          "kind": "planned",
+          "target_progress": 0.813,
+          "target_mood": "angry",
+          "require_destination": true
+        }
+      ],
+      "path": [
+        {
+          "step": 0,
+          "kind": "start",
+          "song": "Redbone — Childish Gambino",
+          "genre": "r&b",
+          "subgenre": "hip pop",
+          "mood": "calm",
+          "progress": 0.109,
+          "step_distance": 0.0
+        },
+        {
+          "step": 1,
+          "kind": "planned",
+          "song": "End Of The Road — Boyz II Men",
+          "genre": "r&b",
+          "subgenre": "urban contemporary",
+          "mood": "calm",
+          "progress": 0.183,
+          "step_distance": 0.086
+        },
+        {
+          "step": 2,
+          "kind": "planned",
+          "song": "Freek'n You — Jodeci",
+          "genre": "r&b",
+          "subgenre": "new jack swing",
+          "mood": "angry",
+          "progress": 0.288,
+          "step_distance": 0.064
+        },
+        {
+          "step": 3,
+          "kind": "bridge",
+          "song": "Non Planned Holiday — Prume",
+          "genre": "r&b",
+          "subgenre": "neo soul",
+          "mood": "angry",
+          "progress": 0.352,
+          "step_distance": 0.064
+        },
+        {
+          "step": 4,
+          "kind": "planned",
+          "song": "Dear Society — Madison Beer",
+          "genre": "pop",
+          "subgenre": "post-teen pop",
+          "mood": "angry",
+          "progress": 0.426,
+          "step_distance": 0.057
+        },
+        {
+          "step": 5,
+          "kind": "bridge",
+          "song": "Just Might Dance — Indi Star",
+          "genre": "edm",
+          "subgenre": "pop edm",
+          "mood": "angry",
+          "progress": 0.501,
+          "step_distance": 0.088
+        },
+        {
+          "step": 6,
+          "kind": "planned",
+          "song": "Good Girls — LANY",
+          "genre": "pop",
+          "subgenre": "indie poptimism",
+          "mood": "angry",
+          "progress": 0.571,
+          "step_distance": 0.064
+        },
+        {
+          "step": 7,
+          "kind": "planned",
+          "song": "Rise up - Club mix — Yves Larock",
+          "genre": "edm",
+          "subgenre": "progressive electro house",
+          "mood": "angry",
+          "progress": 0.715,
+          "step_distance": 0.075
+        },
+        {
+          "step": 8,
+          "kind": "planned",
+          "song": "VOX — Our Psych",
+          "genre": "edm",
+          "subgenre": "electro house",
+          "mood": "angry",
+          "progress": 0.812,
+          "step_distance": 0.08
+        }
+      ],
+      "failed_checks": [],
+      "notes": [],
+      "fixes": []
+    }
+  ],
+  "result": {
+    "passed": true,
+    "revisions": 1,
+    "remaining_failures": [],
+    "warnings": []
+  },
+  "guardrail_warnings": [
+    "Only 6 of 19 songs (32%) are in the catalog; your taste profile is based on just those."
+  ]
+}
